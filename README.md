@@ -26,9 +26,9 @@ strace ./newfile
 ```
 
 C functions being used are wrappers to these system calls  
-3 - number of the file descriptor
-13 - number of bytes written
-0 - success exit code
+3 - number of the file descriptor  
+13 - number of bytes written  
+0 - success exit code  
 ```
 openat(AT_FDCWD, "file1.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644) = 3
 write(3, "Hello, file!\n", 13)          = 13
