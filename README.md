@@ -41,7 +41,7 @@ now the python's program
 strace python3 newfile.py
 ```
 
-the same system calls are being made, with the addition of others, since when running with python we're using the python standard libraries (which may be doing other system calls for other reasons)
+the same system calls are being made, with the addition of others, since when running with python we're using the python standard libraries (which may be doing other system calls for other reasons), in addition to the python interpreter also being traced by `strace`
 ```
 openat(AT_FDCWD, "file2.txt", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE|O_CLOEXEC, 0666) = 3
 fstat64(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
